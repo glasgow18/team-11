@@ -18,6 +18,7 @@ import { CreateAccountComponent } from './create-account/create-account.componen
 import { LoginComponent } from './login/login.component';
 import { NewsComponent } from './news/news.component';
 
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -41,7 +42,8 @@ import { NewsComponent } from './news/news.component';
     MessagesComponent,
     HeroSearchComponent,
     LoginComponent,
-    NewsComponent  ],
+    NewsComponent,
+    ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
