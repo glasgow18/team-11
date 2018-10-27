@@ -1,8 +1,8 @@
 <br>
 <form action="/action_page.php">
-User Name: <input type="text" name="userName" ><br>
+User Name: <input [(ngModel)]="username" placeholder = "name" [ngModelOptions]="{standalone: true}"/> <br>
 <br>
 Password: <input type="text" name="password" ><br>
 <br>
-<input type="submit" value="Submit" id="loginbtn"/>
+<button (click)="isParent(username)">Submit</button>
 </form>
