@@ -17,6 +17,10 @@ import { MessagesComponent }    from './messages/messages.component';
 import { CreateAccountComponent } from './create-account/create-account.component';
 import { LoginComponent } from './login/login.component';
 import { NewsComponent } from './news/news.component';
+import { ChatParentsComponent } from './chat-parents/chat-parents.component';
+import { ChatKidComponent } from './chat-kid/chat-kid.component';
+import { WelcomeFunKidComponent } from './welcome-fun-kid/welcome-fun-kid.component';
+import { StaffMainComponent } from './staff-main/staff-main.component';
 
 
 @NgModule({
@@ -43,6 +47,10 @@ import { NewsComponent } from './news/news.component';
     HeroSearchComponent,
     LoginComponent,
     NewsComponent,
+    ChatParentsComponent,
+    ChatKidComponent,
+    WelcomeFunKidComponent,
+    StaffMainComponent,
     ],
   bootstrap: [ AppComponent ]
 })
