@@ -19,10 +19,13 @@ export class LoginComponent implements OnInit {
   	this.goNews()
   	}
   	else if (name == 'staff'){
-  	this.goChat();
+  	this.goStaffMain();
+  	}
+  	else if (name == 'kid'){
+  	this.goFunWelcome();
   	}
   	else {
-  	this.goFun();
+  		alert('BYYEEE you are not authorized!!')
   	}
   }
 
@@ -31,13 +34,13 @@ export class LoginComponent implements OnInit {
   	window.location.reload();
   }
 
-  goChat(): void {
-  	this.location.go('news');
+  goStaffMain(): void {
+  	this.location.go('staffMain');
   	window.location.reload();
   }
 
-  goFun(): void {
-  	this.location.go('news');
+  goFunWelcome(): void {
+  	this.location.go('funKid');
   	window.location.reload();
   }
 
