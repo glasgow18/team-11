@@ -1,8 +1,8 @@
 import { NgModule }       from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
 import { FormsModule }    from '@angular/forms';
+import { HttpClientModule }    from '@angular/common/http';
 
-//import { HttpClientModule }    from '@angular/common/http';
 //import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 //import { InMemoryDataService }  from './in-memory-data.service';
 
@@ -24,6 +24,7 @@ import { StaffMainComponent } from './staff-main/staff-main.component';
 import { ProfileComponent } from './profile/profile.component';
 import { BuddyComponent } from './buddy/buddy.component';
 import { ForumComponent } from './forum/forum.component';
+
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
@@ -44,14 +45,12 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features,
     AngularFireStorageModule, // imports firebase/storage only needed for storage features
     AngularFireDatabaseModule
-
     //HttpClientModule,
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.
     // Remove it when a real server is ready to receive requests.
     //HttpClientInMemoryWebApiModule.forRoot(
-    //  InMemoryDataService, { dataEncapsulation: false }
-    )
+    //  InMemoryDataService, { dataEncapsulation: false })
   ],
   declarations: [
     AppComponent,
