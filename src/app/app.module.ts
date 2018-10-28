@@ -32,6 +32,8 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { environment } from '../environments/environment';
 import { MainComponent } from './main/main.component';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { Messages2Component } from './messages2/messages2.component';
+import { ChatParents2Component } from './chat-parents2/chat-parents2.component';
 
 
 @NgModule({
@@ -70,6 +72,8 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
     ProfileComponent,
     BuddyComponent,
     ForumComponent,
+    Messages2Component,
+    ChatParents2Component,
     ],
   bootstrap: [ AppComponent ]
 })
