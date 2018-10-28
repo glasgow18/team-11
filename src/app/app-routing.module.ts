@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CreateAccountComponent }   from './create-account/create-account.component';
 import { LoginComponent }   from './login/login.component';
 import { NewsComponent }   from './news/news.component';
+import { ProfileComponent }   from './profile/profile.component';
 import { DashboardComponent }   from './dashboard/dashboard.component';
 import { HeroesComponent }      from './heroes/heroes.component';
 import { HeroDetailComponent }  from './hero-detail/hero-detail.component';
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'staffMain', component: StaffMainComponent },
   { path: 'funKid', component: WelcomeFunKidComponent },
   { path: 'detail/:id', component: HeroDetailComponent },
+  { path: 'profile', component: ProfileComponent},
   { path: 'heroes', component: HeroesComponent }
 ];
 
