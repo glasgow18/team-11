@@ -1,6 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
 
+import { AngularFireDatabase } from '@angular/fire/database';
+import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/firestore';
+import { Observable } from 'rxjs';
+
+
 @Component({
   selector: 'app-create-account',
   templateUrl: './login.component.html',
@@ -8,11 +13,14 @@ import { Location } from '@angular/common';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(  private location: Location) {
+  parentRef: any;
+
+  constructor(  private location: Location, private afs: AngularFirestore) {
+    this.parentRef = afs.collection<any>('parent');
   }
 
-  ngOnInit() {
-  }
+
+  ngOnInit() { }
 
   isParent(name:string): void {
   	if (name == 'parent'){
@@ -44,5 +52,42 @@ export class LoginComponent implements OnInit {
   	window.location.reload();
   }
 
-}
+//  checkDetails(username: string, password: string): void {
 
+//      var docRef = this.afs.collection("username").doc(username);
+
+  //    docRef.get().then((doc) => {
+  //      if (doc.exists) {
+  //          console.log("Document data:", doc.data());
+  //        } else {
+  //          // doc.data() will be undefined in this case
+  //          console.log("No such document!");
+  //        }
+  //      }).catch(function(error) {
+  //        console.log("Error getting document:", error);
+//        });
+  //}
+
+
+
+//  person: AngularFirestoreCollection<Invoice>;
+//  invoiceObservableArray: Observable<Invoice[]>;
+//  invoiceArray: Invoice[];
+
+
+//  getDetails() { //getting data off DB
+//      this.person= this.afs.collection("username").doc(username);
+//      return this.person.valueChanges();
+//  }
+
+//  this.invoiceObservableArray.getDetails();//calling method above
+
+//  this.invoiceObservableArray.subscribe(invoice=> { //converting oberv in array
+//        this.invoiceArray = invoice;
+//      });
+
+//  console.log(this.invoiceArray); //showing in console
+
+
+
+}

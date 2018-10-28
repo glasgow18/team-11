@@ -12,6 +12,9 @@ import { HeroDetailComponent }  from './hero-detail/hero-detail.component';
 import { WelcomeFunKidComponent } from './welcome-fun-kid/welcome-fun-kid.component';
 import { StaffMainComponent } from './staff-main/staff-main.component';
 import { ForumComponent } from './forum/forum.component';
+import { ChatParentsComponent } from './chat-parents/chat-parents.component';
+import { MainComponent } from './main/main.component';
+
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -19,13 +22,15 @@ const routes: Routes = [
   { path: 'create-account', component: CreateAccountComponent },
   { path: 'login', component: LoginComponent },
   { path: 'news', component: NewsComponent },
+  { path: 'chat-parents', component: ChatParentsComponent },
   { path: 'buddy', component: BuddyComponent },
   { path: 'forum', component: ForumComponent},
   { path: 'staffMain', component: StaffMainComponent },
   { path: 'funKid', component: WelcomeFunKidComponent },
   { path: 'detail/:id', component: HeroDetailComponent },
   { path: 'profile', component: ProfileComponent},
-  { path: 'heroes', component: HeroesComponent }
+  { path: 'heroes', component: HeroesComponent },
+  { path: 'main', component: MainComponent }
 ];
 
 @NgModule({
