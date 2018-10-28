@@ -23,13 +23,13 @@ export class LoginComponent implements OnInit {
   ngOnInit() { }
 
   isParent(name:string): void {
-  	if (name == 'parent'){
+  	if (name == 'SophieMcKay'){
   	this.goNews()
   	}
-  	else if (name == 'staff'){
+  	else if (name == 'DrFAdams'){
   	this.goStaffMain();
   	}
-  	else if (name == 'kid'){
+  	else if (name == 'RedHotChilli'){
   	this.goFunWelcome();
   	}
   	else {
