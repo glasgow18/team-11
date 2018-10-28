@@ -21,6 +21,7 @@ import { ChatParentsComponent } from './chat-parents/chat-parents.component';
 import { ChatKidComponent } from './chat-kid/chat-kid.component';
 import { WelcomeFunKidComponent } from './welcome-fun-kid/welcome-fun-kid.component';
 import { StaffMainComponent } from './staff-main/staff-main.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 @NgModule({
@@ -51,6 +52,7 @@ import { StaffMainComponent } from './staff-main/staff-main.component';
     ChatKidComponent,
     WelcomeFunKidComponent,
     StaffMainComponent,
+    ProfileComponent,
     ],
   bootstrap: [ AppComponent ]
 })
