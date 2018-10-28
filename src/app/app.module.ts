@@ -23,6 +23,7 @@ import { WelcomeFunKidComponent } from './welcome-fun-kid/welcome-fun-kid.compon
 import { StaffMainComponent } from './staff-main/staff-main.component';
 import { ProfileComponent } from './profile/profile.component';
 import { BuddyComponent } from './buddy/buddy.component';
+import { ForumComponent } from './forum/forum.component';
 
 
 @NgModule({
@@ -55,6 +56,7 @@ import { BuddyComponent } from './buddy/buddy.component';
     StaffMainComponent,
     ProfileComponent,
     BuddyComponent,
+    ForumComponent,
     ],
   bootstrap: [ AppComponent ]
 })
