@@ -1,0 +1,12 @@
+<nav>
+<a routerLink="/login">Login</a>
+<a routerLink="/create-account">Create Account</a>
+</nav>
+<br>
+<form action="/action_page.php">
+User Name: <input [(ngModel)]="username" placeholder = "name" [ngModelOptions]="{standalone: true}"/> <br>
+<br>
+Password: <input type="text" name="password" ><br>
+<br>
+<button (click)="isParent(username)">Submit</button>
+</form>
